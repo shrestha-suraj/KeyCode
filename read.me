@@ -1,1 +1,10 @@
 This is a simple web based program that reports the keystroke number that is input from the keyboard.
+
+Key Code is the special ASCII value given to each key
+on the keyboard. These keycode was accessed using the
+window.addEventListner("keydown", function(e){
+    //Here E is the object of whatever the key stroke is.
+    //Looking at the console we get in-depth knowledge of
+    // this key and then I found that using key.keyCode
+    // will give the key code which we displayed on the screen.
+});

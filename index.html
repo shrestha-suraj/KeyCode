@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="display key code on screen when user clicks specific keys."/>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=10."/>
+        <title>Key Code</title>
+        <link type="text/css" rel="stylesheet" href="css/index.css"/>
+    </head>
+    <body>
+        <div class="device-window">
+            <div>
+                <h1 id="content-view"></h1>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+    window.addEventListener("keydown", function(e){
+        document.getElementById("content-view").innerHTML="The Key Code is: "+e.keyCode;
+    });
+    
+    </script>
+</html>
